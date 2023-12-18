@@ -32,7 +32,6 @@ function isValid(s) {
         "]": "[",
         "}": "{"
     };
-
     for (var i = 0; i < s.length; i++) {
         var char = s[i];
         if (bracketMapping[char]) {

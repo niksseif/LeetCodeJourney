@@ -21,7 +21,7 @@
 // Here I need to use the first word as my prefix and compare it with the rest of items in the array
 // Initiate a variable call prefix with  the first word of the array as it's value 
 // The forloop starts from the second element
-// Use While loop to trim the prefix, until it matched the start of the cuttent string. 
+// Use While loop to trim the prefix, until it matched the start of the current string. 
 // after we are done if the prefix becomes an empty string, the function returns an empty prefix
 
 var longestCommonPrefix = function(strs) {
@@ -30,7 +30,7 @@ var longestCommonPrefix = function(strs) {
     }
     let prefix = strs[0]
     for (let i = 1; i < strs.length; i++){
-        while( strs[i].indexOf(prefix) != 0){ // this will check if the currenr prefix is at the start of the string. if it's not the last char of prefix is removed.
+        while( strs[i].indexOf(prefix) != 0){ // this will check if the current prefix is at the start of the string. if it's not the last char of prefix is removed.
 
             prefix = prefix.substring(0, prefix.length-1)
             if(prefix.length === 0){
